@@ -5,7 +5,7 @@ module.exports = {
     description: 'A blog',
     siteUrl: 'https://tkrplus.github.io/niwalab-mdblog/',
   },
-  pathPrefix: 'tkrplus.github.io/niwalab-mdblog',
+  pathPrefix: 'niwalab-mdblog',
   plugins: [
     {
       resolve: `gatsby-source-filesystem`,
