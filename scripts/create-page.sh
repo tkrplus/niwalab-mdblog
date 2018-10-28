@@ -19,6 +19,7 @@ touch $FILE
 echo "---" >> $FILE
 echo "title: \"\"" >> $FILE
 echo "date: \"$DATETIME\"" >> $FILE
+echo "category: \"\"" >> $FILE
 echo "tags: []" >> $FILE
 echo "---" >> $FILE
 
