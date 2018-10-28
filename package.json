@@ -3,6 +3,7 @@
   "description": "Niwa-Lab blog",
   "version": "1.0.0",
   "author": "tkrplus <tkrplus@github.com>",
+  "homepage": "https://tkrplus.github.io/niwalab-mdblog/",
   "scripts": {
     "dev": "gatsby develop",
     "lint": "./node_modules/.bin/eslint --ext .js,.jsx --ignore-pattern public .",
