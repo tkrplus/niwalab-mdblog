@@ -1,8 +1,12 @@
 # Project dependencies
-.cache
-node_modules
+.cache/
+.gatsby-context.js
+.intermediate-representation/
+node_modules/
 yarn-error.log
 
 # Build directory
-/public
+public
+
+# Other
 .DS_Store
