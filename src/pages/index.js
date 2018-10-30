@@ -4,6 +4,7 @@ import get from 'lodash/get'
 import Helmet from 'react-helmet'
 
 import Bio from '../components/Bio'
+import CategoryList from '../components/CategoryList'
 import Layout from '../components/layout'
 import { rhythm } from '../utils/typography'
 
@@ -15,6 +16,7 @@ class BlogIndex extends React.Component {
       'props.data.site.siteMetadata.description'
     )
     const posts = get(this, 'props.data.allMarkdownRemark.edges')
+    const categories = get(this, 'props.data.allMarkdownRemark.categories')
 
     return (
       <Layout location={this.props.location}>
@@ -42,6 +44,9 @@ class BlogIndex extends React.Component {
             </div>
           )
         })}
+        <CategoryList
+          categories={categories}
+        />
       </Layout>
     )
   }
@@ -69,6 +74,10 @@ export const pageQuery = graphql`
             title
           }
         }
+      }
+      categories: group(field: frontmatter___category) {
+        fieldValue
+        totalCount
       }
     }
   }

@@ -1,6 +1,7 @@
 ---
 title: "GatsbyでBlogを始めてみました。"
 date: "2018-10-23T22:40:32.169Z"
+category: "Memo"
 ---
 
 # GatsbyでBlogを始めてみました。
