@@ -5,6 +5,7 @@
   "author": "tkrplus <tkrplus@github.com>",
   "homepage": "https://tkrplus.github.io/niwalab-mdblog/",
   "scripts": {
+    "start": "gatsby develop",
     "create": "./scripts/create-page.sh",
     "dev": "gatsby develop",
     "lint": "./node_modules/.bin/eslint --ext .js,.jsx --ignore-pattern public .",
