@@ -1,4 +1,69 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Niwa-Lab Blog]]></title><description><![CDATA[A blog]]></description><link>https://tkrplus.github.io/niwalab-mdblog/</link><generator>RSS for Node</generator><lastBuildDate>Thu, 01 Nov 2018 01:05:24 GMT</lastBuildDate><item><title><![CDATA[Spring Fest 2018 参加レポート]]></title><description><![CDATA[イベント概要 日時： 2018年11月1日 10:00 - 18:30 場所： 両国　KFCホール（チキンとは関係なかた） URL：  http://springfest2018.springframework.jp/ 主催：Spring…]]></description><link>https://tkrplus.github.io/niwalab-mdblog//20181031/</link><guid isPermaLink="false">https://tkrplus.github.io/niwalab-mdblog//20181031/</guid><pubDate>Wed, 31 Oct 2018 01:50:21 GMT</pubDate><content:encoded>&lt;h1&gt;イベント概要&lt;/h1&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Niwa-Lab Blog]]></title><description><![CDATA[A blog]]></description><link>https://tkrplus.github.io/niwalab-mdblog/</link><generator>RSS for Node</generator><lastBuildDate>Sat, 03 Nov 2018 07:23:25 GMT</lastBuildDate><item><title><![CDATA[React会 #1 参加レポート]]></title><description><![CDATA[イベントの概要 日時： 2018年11月1日 19:30 - 21:30 場所： Mercari URL：  https://react-kai.connpass.com/event/102286/ どんな会だった？ 今回のホットワードは   でした。 会自体はLTが…]]></description><link>https://tkrplus.github.io/niwalab-mdblog//20181101/</link><guid isPermaLink="false">https://tkrplus.github.io/niwalab-mdblog//20181101/</guid><pubDate>Thu, 01 Nov 2018 10:37:48 GMT</pubDate><content:encoded>&lt;h1&gt;イベントの概要&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;日時： 2018年11月1日 19:30 - 21:30&lt;/li&gt;
+&lt;li&gt;場所： Mercari&lt;/li&gt;
+&lt;li&gt;URL： &lt;a href=&quot;https://react-kai.connpass.com/event/102286/&quot;&gt;https://react-kai.connpass.com/event/102286/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;どんな会だった？&lt;/h1&gt;
+&lt;p&gt;今回のホットワードは &lt;code class=&quot;language-text&quot;&gt;React Hooks&lt;/code&gt; でした。&lt;/p&gt;
+&lt;p&gt;会自体はLTが6つと懇親会といった、軽めの内容でした。
+基本的にはエンジニア同士を交流する場をつくったよ！という感じでした。&lt;/p&gt;
+&lt;p&gt;そういったライトな内容だったこともあり、会の雰囲気はかなりアットホームなほっこりタイプでした。笑&lt;/p&gt;
+&lt;p&gt;前日に行ったSpring Festが、堅めの内容だったこともあり、React会のゆるさが良い感じに思えました。
+交流を目的とする場合は、ある程度ゆるい雰囲気作りも必要なんだなと感じました。&lt;/p&gt;
+&lt;h1&gt;Hooksについて&lt;/h1&gt;
+&lt;p&gt;まず、&lt;code class=&quot;language-text&quot;&gt;Hooks&lt;/code&gt; について色々と知れてよかったです。&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;Hooks&lt;/code&gt;とは、従来はサードパーティ製ライブラリで実現されていたHoCがReact公式にサポートされたものらしい。
+従来のライブラリでいうと&lt;code class=&quot;language-text&quot;&gt;recompose&lt;/code&gt;とかそういったやつですね。
+認識に誤りがあったらごめんなさい。&lt;/p&gt;
+&lt;p&gt;ちなみに&lt;code class=&quot;language-text&quot;&gt;recompose&lt;/code&gt;の作者はFacebookに採用されて、&lt;code class=&quot;language-text&quot;&gt;Hooks&lt;/code&gt;の開発に携わったそうな。
+そういった背景もあり、&lt;code class=&quot;language-text&quot;&gt;recompose&lt;/code&gt;は今後はメンテナンスされないそうです（え…&lt;/p&gt;
+&lt;p&gt;個人的にはHoCをあんまり利用していないので&lt;code class=&quot;language-text&quot;&gt;Hooks&lt;/code&gt;の旨味がぱっと理解できないので、
+ちょっと様子見かなといったところです。&lt;/p&gt;
+&lt;p&gt;でもReact Hooksを導入した経緯の
+「Class ComponentでReactがStateを持ってしまっていたのを改善したい
+今後はFunctional Componentを中心としてStatelessなものとしていきたい」
+という考え方にはとても賛同してます。&lt;/p&gt;
+&lt;p&gt;実際にReactComponentを作っていると、Statefulなものを作ってしまうと複雑性が増してしまうので
+あまり好みではなかったんですよね。&lt;/p&gt;
+&lt;p&gt;なので、大体のコンポーネントはFunctional Componentをベースとして作っています。
+ページのライフサイクル等がひつようなところだけ、Class Componentを使用していました。
+&lt;code class=&quot;language-text&quot;&gt;Hooks&lt;/code&gt;が導入されたことでページのライフサイクルをどう扱わうのか？みたいなところも興味あります。&lt;/p&gt;
+&lt;h1&gt;Hooks以外に気になったこと&lt;/h1&gt;
+&lt;p&gt;個人的には「expo.ioを利用したReact Nativeの爆速開発」が気になりました。
+最近、React Nativeがちょっと気になっていたのでトライしてみようと改めて思わせてくれました。&lt;/p&gt;
+&lt;p&gt;React Nativeの良いところって、デリバリーの速さだと思うんですよね。
+何に使うかというと、プロトタイプの作成や実証実験のとき役立つと考えてます。
+実証実験のときは、特に開発サイクルの速さが鍵になってくるのでReact Nativeに勝ち筋があると思ってます。
+（iOSアプリの場合はTestFlightもありますが、どうしてもスピード感がでないことがありました。）&lt;/p&gt;
+&lt;p&gt;短期的に開発するならReact Nativeで作り、アプリに価値があるのか検証する。
+価値があると分かったら、Swiftでしっかり作りなおす。というのが考えれるかなと。
+（React Native -&gt; Swift の移行コストはどうするのか？というのは課題ですが…）&lt;/p&gt;
+&lt;p&gt;あとは、やまたつさんのスライドがどうやって作ったのは非常に気になった。笑
+だってスライドの中で、Reactがライブコーディングできちゃうんだもの。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://slides.yamatatsu193.net/react-hook/#0&quot;&gt;https://slides.yamatatsu193.net/react-hook/#0&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;ざっくりと感想&lt;/h1&gt;
+&lt;p&gt;connpass上にあるReact関連の勉強会グループでは「React.js Meetup」があるけど、
+長らく開催されていないので、新しいグループができたのでありがたいなーと思い参加しました。&lt;/p&gt;
+&lt;p&gt;と、思ったら今回は最初で最後のReact会になるとのこと。笑&lt;/p&gt;
+&lt;p&gt;というのも、「React.js Meetup」運営側から声がかかり合流するそうな。&lt;/p&gt;
+&lt;p&gt;参加側としても、日本のReactユーザの交流が活発になることが目的なので歓迎です。
+ということで、Raect.js Meetupの勉強会がまた頻繁に行われるといいなと思ってます。&lt;/p&gt;
+&lt;p&gt;そして参加するだけでなく、そろそろLTだったりで発表するようにしたいなと思い始めました。
+今回のReact会に参加してみて、自分のReactのスキルレベルは中級くらいと認識しました。
+中級から少し上級に背伸びしていきたいと改めて思ったところ。&lt;/p&gt;
+&lt;p&gt;自身のReactの使用状況とすると、業務でReactを使用して約1年でチーム内ではフロントをリードする役割を持ってます。
+なので実装指針の決定や、ライブラリ側の挙動を起源とする不具合に対応したりしています。
+とはいえどもサーバサイドエンジニアとの兼務なので、そこまで深くReactに関わっていない状態です。&lt;/p&gt;
+&lt;p&gt;自分の中での初級・上級の定義をいうと、こんな感じ。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;上級：Reactの内側を知っており、最新動向を追っている。自身の設計思想を基に実装指針を改善していける人。&lt;/li&gt;
+&lt;li&gt;中級：初級でもなく、上級でもない。どっちつかずの状態。&lt;/li&gt;
+&lt;li&gt;初級：趣味や業務で軽くReactを触った程度。まだ色々と知らないことが多い。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;上級に背伸びするために今後は、最新動向を追って新機能がでたら実際に手を動かしてみようと思います。
+今回でいうと、&lt;code class=&quot;language-text&quot;&gt;React Hooks&lt;/code&gt;ですね。
+業務で書いていることも&lt;code class=&quot;language-text&quot;&gt;Hooks&lt;/code&gt;に対応していかないといけないので、早めにサンプルコードを作ろうと思います。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Spring Fest 2018 参加レポート]]></title><description><![CDATA[イベント概要 日時： 2018年11月1日 10:00 - 18:30 場所： 両国　KFCホール（チキンとは関係なかた） URL：  http://springfest2018.springframework.jp/ 主催：Spring…]]></description><link>https://tkrplus.github.io/niwalab-mdblog//20181031/</link><guid isPermaLink="false">https://tkrplus.github.io/niwalab-mdblog//20181031/</guid><pubDate>Wed, 31 Oct 2018 01:50:21 GMT</pubDate><content:encoded>&lt;h1&gt;イベント概要&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;日時： 2018年11月1日 10:00 - 18:30&lt;/li&gt;
 &lt;li&gt;場所： 両国　KFCホール（チキンとは関係なかた）&lt;/li&gt;
@@ -71,7 +136,7 @@ Kotlinはゆくゆく導入したいなーという考えがあるので、ち�
 業務ロジックなどの共通処理を作ってしまうと、サービス間で結合が生まれてしまう。
 共通処理を作るくらいなら、別MSとして切り出せないか考えたほうが良い。&lt;/p&gt;
 &lt;p&gt;実際の開発では、共通処理を作るべきか否かは、その処理の大きさによるのかなと思った。
-その損益分岐点となる&lt;/p&gt;
+その損益分岐点の見極めはアーキテクトとしての腕の見せどころかな。&lt;/p&gt;
 &lt;p&gt;MSはテストをちゃんと作らなければならない。
 MSの進化を短時間で行うためには、リグレッションを保証していくことが必要。
 CI環境の重要性はWF型よりも大切になってくる。&lt;/p&gt;
@@ -171,7 +236,7 @@ Spring Sercurity 5はクライント・リソースサーバ側のみ対応。�
 &lt;p&gt;実際、ドキュメント少なすぎて生のソースコードを読み解いて理解したのは良い思い出。
 今回、SpringがOAuth機能を新たに作り直してSpring Security標準搭載させたのは英断だと思ってる。&lt;/p&gt;
 &lt;p&gt;近いうちに、Spring Security 5系を使って、クライアントサーバを試してみようかなと。&lt;/p&gt;
-&lt;p&gt;使用するpackage&lt;/p&gt;
+&lt;p&gt;使用していたpackageたち。&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;spring-security-oauth-client
 spring-security-oauth-resource&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;h1&gt;Tips&lt;/h1&gt;
