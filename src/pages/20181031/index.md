@@ -7,7 +7,7 @@ tags: ["Java", "Spring", "勉強会"]
 
 # イベント概要
 
-- 日時： 2018年11月1日 10:00 - 18:30
+- 日時： 2018年10月31日 10:00 - 18:30
 - 場所： 両国　KFCホール（チキンとは関係なかた）
 - URL： http://springfest2018.springframework.jp/
 - 主催：Spring日本ユーザ会。その他スポンサーは割とTech系とSIer系とIT教育系
