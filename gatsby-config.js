@@ -48,13 +48,12 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Starter Blog`,
-        short_name: `GatsbyJS`,
+        name: `Niwalab`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/assets/gatsby-icon.png`,
+        icon: `src/assets/icon.svg`,
       },
     },
     `gatsby-plugin-offline`,
@@ -65,5 +64,11 @@ module.exports = {
         pathToConfigModule: 'src/utils/typography',
       },
     },
+    {
+      resolve: `gatsby-plugin-root-import`,
+      options: {
+        '~/src': `${__dirname}/src`
+      }
+    }
   ],
 }
