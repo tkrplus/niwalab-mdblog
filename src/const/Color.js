@@ -3,5 +3,8 @@ export default {
   CALM_WHITE: '#EEEEEE',
   VERY_LIGHT_GRAY: '#aebcb9',
   LIGHT_GRAY: '#868e96',
-  BLACK: '#000000'
+  BASE_FONT: '#656565',
+  MEDIUM_BLACK: '#171717',
+  BLACK: '#000000',
+  NAVY: '#227093'
 }

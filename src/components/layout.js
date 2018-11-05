@@ -73,6 +73,9 @@ class Template extends React.Component {
 const SiteTopWrapper = styled.div`
   display: flux;
   padding: 100px 100px 0;
+  @media(max-width: ${Size.MEDIA.PHONE}px) {
+    padding: 60px 30px 0;
+  }
 `
 
 const SiteTitleWrapper = styled.div`
@@ -80,8 +83,11 @@ const SiteTitleWrapper = styled.div`
 `
 
 const SiteIconImg = styled.img`
-  width: 110px;
-  margin-right: 20px;
+  width: 80px;
+  margin-right: 10px;
+  @media(max-width: ${Size.MEDIA.PHONE}px) {
+    width: 75px;
+  }
 `
 
 const SiteTitle = styled.div`

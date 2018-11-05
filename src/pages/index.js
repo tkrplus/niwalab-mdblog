@@ -1,4 +1,5 @@
 import React from 'react'
+import styled from 'styled-components'
 import { Link, graphql } from 'gatsby'
 import get from 'lodash/get'
 import Helmet from 'react-helmet'
@@ -7,6 +8,11 @@ import Bio from '../components/Bio'
 import CategoryList from '../components/CategoryList'
 import Layout from '../components/layout'
 import { rhythm } from '../utils/typography'
+import Const from '~/src/const'
+const {
+  Size,
+  Color
+} = Const
 
 class BlogIndex extends React.Component {
   render() {
@@ -28,19 +34,20 @@ class BlogIndex extends React.Component {
         {posts.map(({ node }) => {
           const title = get(node, 'frontmatter.title') || node.fields.slug
           return (
-            <div key={node.fields.slug}>
-              <h3
-                style={{
-                  marginBottom: rhythm(1 / 4),
-                }}
-              >
-                <Link style={{ boxShadow: 'none' }} to={node.fields.slug}>
-                  {title}
-                </Link>
-              </h3>
-              <small>{node.frontmatter.date}</small>
-              <p dangerouslySetInnerHTML={{ __html: node.excerpt }} />
-            </div>
+            <PostWrapper key={node.fields.slug}>
+              <Link to={node.fields.slug}>
+                <PostTitle>
+                    {title}
+                </PostTitle>
+              </Link>
+              <PostMeta>
+                <PostDate>{node.frontmatter.date}</PostDate>
+              </PostMeta>
+              <PostSnipet dangerouslySetInnerHTML={{ __html: node.excerpt }} />
+              <ReadMore to={node.fields.slug}>
+                Read more
+              </ReadMore>
+            </PostWrapper>
           )
         })}
         <CategoryList
@@ -50,6 +57,57 @@ class BlogIndex extends React.Component {
     )
   }
 }
+
+const PostWrapper = styled.div`
+  display: block;
+  margin: 0 15px 30px;
+`
+
+const PostTitle = styled.h3`
+  font-size: ${Size.FONT.X_BASE}px;
+  font-weight: 700;
+  line-height: 1.5em;
+  text-decoration: none;
+  margin: 0;
+  color: ${Color.MEDIUM_BLACK};
+`
+
+const PostMeta = styled.div`
+  margin: 10px 0 0;
+  color: ${Color.VERY_LIGHT_GRAY};
+  font-size: ${Size.FONT.SMALL}px;
+  font-weight: 400;
+`
+
+const PostDate = styled.span`
+  display: inline-block;
+  margin: 0;
+`
+
+const PostSnipet = styled.p`
+  display: block;
+  margin: 7px 0 0;
+  font-size: ${Size.FONT.SMALL}px;
+  font-weight: 400px;
+  color: ${Color.BASE_FONT};
+`
+
+const ReadMore = styled(Link)`
+  display: inline-block;
+  background-color: ${Color.NAVY};
+  color: ${Color.WHITE};
+  height: 28px;
+  font-size: ${Size.FONT.SMALL}px;
+  font-weight: 400;
+  line-height: 28px;
+  padding: 0 15px;
+  margin: 12px 0 0;
+  border-radius: 2px;
+  trasition: .2s ease;
+  &:hober {
+    background-color: ${Color.BLACK};
+  }
+`
 
 export default BlogIndex
 
