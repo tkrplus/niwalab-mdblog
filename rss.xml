@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Niwa-Lab Blog]]></title><description><![CDATA[A blog]]></description><link>https://tkrplus.github.io/niwalab-mdblog/</link><generator>RSS for Node</generator><lastBuildDate>Sat, 03 Nov 2018 07:26:36 GMT</lastBuildDate><item><title><![CDATA[React会 #1 参加レポート]]></title><description><![CDATA[イベントの概要 日時： 2018年11月1日 19:30 - 21:30 場所： Mercari URL：  https://react-kai.connpass.com/event/102286/ どんな会だった？ 今回のホットワードは   でした。 会自体はLTが…]]></description><link>https://tkrplus.github.io/niwalab-mdblog//20181101/</link><guid isPermaLink="false">https://tkrplus.github.io/niwalab-mdblog//20181101/</guid><pubDate>Thu, 01 Nov 2018 10:37:48 GMT</pubDate><content:encoded>&lt;h1&gt;イベントの概要&lt;/h1&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Niwa-Lab Blog]]></title><description><![CDATA[A blog]]></description><link>https://tkrplus.github.io/niwalab-mdblog/</link><generator>RSS for Node</generator><lastBuildDate>Tue, 06 Nov 2018 13:46:58 GMT</lastBuildDate><item><title><![CDATA[React会 #1 参加レポート]]></title><description><![CDATA[イベントの概要 日時： 2018年11月1日 19:30 - 21:30 場所： Mercari URL：  https://react-kai.connpass.com/event/102286/ どんな会だった？ 今回のホットワードは   でした。 会自体はLTが…]]></description><link>https://tkrplus.github.io/niwalab-mdblog//20181101/</link><guid isPermaLink="false">https://tkrplus.github.io/niwalab-mdblog//20181101/</guid><pubDate>Thu, 01 Nov 2018 10:37:48 GMT</pubDate><content:encoded>&lt;h1&gt;イベントの概要&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;日時： 2018年11月1日 19:30 - 21:30&lt;/li&gt;
 &lt;li&gt;場所： Mercari&lt;/li&gt;
@@ -98,11 +98,7 @@ Kotlinはゆくゆく導入したいなーという考えがあるので、ち�
 &lt;h2&gt;エンタープライズ・マイクロサービスの格言&lt;/h2&gt;
 &lt;p&gt;Agenda&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;blockquote&gt;
-&lt;blockquote&gt;
 &lt;p&gt;エンタープライズ系システムのマイクロサービス化、それが、エンタープライズ・マイクロサービス。 Spring Fest 2017の「日本一やさしいマイクロサービス入門」の続編的ハナシとして、エンタープライズ・マイクロサービスを上手くやるための格言などを噺します。 真面目なセッションで疲れてしまった貴方の頭が休まるセッション(!?)。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;/blockquote&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;プロジェクトをスケールする手段として、マイクロサービス(MS)化を選んでいきたいなと思っているこの頃。
 エンタープライズ向けマイクロサービスというタイトルに惹かれて参加。&lt;/p&gt;
@@ -122,12 +118,8 @@ Kotlinはゆくゆく導入したいなーという考えがあるので、ち�
 基本的にMSは探索的な開発になるので、手戻りが難しいウォーターフォール(WF)型は難しいんじゃないかなというところ。
 個人的にも、ちょっとした失敗・手戻りでも管理をしなきゃいけないWF型はMSに向かないと思ってる。&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;blockquote&gt;
-&lt;blockquote&gt;
 &lt;p&gt;エンターブライズなシステム開発では、技術スキルの低さが問題となる。
 優秀なチームリーダを配置することで最低限の品質をチームリーダで保証していく。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;/blockquote&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;チーム単位では、技術レベルの高さは求められるのがMSなので、
 これも１つの解決方法なのかなーと思ったりする。&lt;/p&gt;
@@ -148,12 +140,8 @@ CI環境の重要性はWF型よりも大切になってくる。&lt;/p&gt;
 &lt;p&gt;Speacker: &lt;a href=&quot;https://taro.hatenablog.jp/&quot;&gt;https://taro.hatenablog.jp/&lt;/a&gt;
 Agenda:&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;blockquote&gt;
-&lt;blockquote&gt;
 &lt;p&gt;SpringはかねてよりKotlinをサポートしていましたが、Spring Framework 5.0でよりKotlinフレンドリなAPIを提供し始めました。本セッションでは、SpringアプリをKotlinで開発する基本的な話と、実際の開発を経験して得られた知見をTips集のような形で共有します。
 本セッションを聴いていただき、Kotlinへの関心を高め、Kotlin x Springにありがちな落とし穴を回避する策を学んでいただければ幸いです。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;/blockquote&gt;
 &lt;/blockquote&gt;
 &lt;h3&gt;KotlinでSpringアプリを始める&lt;/h3&gt;
 &lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;@Service&lt;/code&gt; などがついたクラスはSpringによってサブクラスが生成される。
@@ -172,20 +160,20 @@ KotlinがJavaにコンパイルされたときの形を考える必要がまだ�
 &lt;h3&gt;アノテーションをやめる&lt;/h3&gt;
 &lt;p&gt;アノテーションを削除する代わりに、自分でBean登録してやろうという話。&lt;/p&gt;
 &lt;p&gt;以下、サンプルコード&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;SpringAppicationBuilder()
-  .sources(DemoApplication::class.java)
-  .initializers(beans {
-      bean { DemoService() }
-      bean { DemoController(ref()) } // DIは型推論によって解決してくれる
-      bean {
-        router {
-          GET(&amp;quot;/demo&amp;quot;) {
-            ref&amp;lt;DemoController&amp;gt;().helloWorld() // 型推論ができないものは自身で設定
-          }
-        }
-      }
-    })
-  .run(*args)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;kotlin&quot;&gt;&lt;pre class=&quot;language-kotlin&quot;&gt;&lt;code class=&quot;language-kotlin&quot;&gt;&lt;span class=&quot;token function&quot;&gt;SpringAppicationBuilder&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;sources&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;DemoApplication&lt;span class=&quot;token operator&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;java&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;initializers&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;beans &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+&lt;span class=&quot;gatsby-highlight-code-line&quot;&gt;      bean &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;DemoService&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;span class=&quot;gatsby-highlight-code-line&quot;&gt;      bean &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;DemoController&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;ref&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// DIは型推論によって解決してくれる&lt;/span&gt;
+&lt;/span&gt;&lt;span class=&quot;gatsby-highlight-code-line&quot;&gt;      bean &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;span class=&quot;gatsby-highlight-code-line&quot;&gt;        router &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;span class=&quot;gatsby-highlight-code-line&quot;&gt;          &lt;span class=&quot;token function&quot;&gt;GET&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;/demo&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;span class=&quot;gatsby-highlight-code-line&quot;&gt;            ref&lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;DemoController&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;helloWorld&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// 型推論ができないものは自身で設定&lt;/span&gt;
+&lt;/span&gt;&lt;span class=&quot;gatsby-highlight-code-line&quot;&gt;          &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;span class=&quot;gatsby-highlight-code-line&quot;&gt;        &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;span class=&quot;gatsby-highlight-code-line&quot;&gt;      &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;/span&gt;    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;run&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;args&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;アノテーションに馴染んでいるものからすると、あまりメリットを感じない。&lt;/p&gt;
 &lt;h3&gt;テスト！&lt;/h3&gt;
 &lt;p&gt;Kotlinテスト周辺ツールは下記らしい。&lt;/p&gt;
@@ -202,9 +190,9 @@ KotlinがJavaにコンパイルされたときの形を考える必要がまだ�
 &lt;li&gt;DbSetup-kotlin&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Kotlin 1.3から文脈からNotNullを推定してくれる機能がついた。&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;if(item != null) {
-  item.name // 従来はitem?.nameという記述が必要だった。
-}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;kotlin&quot;&gt;&lt;pre class=&quot;language-kotlin&quot;&gt;&lt;code class=&quot;language-kotlin&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;item &lt;span class=&quot;token operator&quot;&gt;!=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;null&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  item&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;name &lt;span class=&quot;token comment&quot;&gt;// 従来はitem?.nameという記述が必要だった。&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;MockitoでKotlinクラスをmockしようとして失敗したのは良い思い出。
 &lt;code class=&quot;language-text&quot;&gt;final&lt;/code&gt;だったからできなかったのだが、MockKを使用すればmockできるそうな。&lt;/p&gt;
 &lt;h3&gt;感想&lt;/h3&gt;
@@ -212,21 +200,19 @@ KotlinがJavaにコンパイルされたときの形を考える必要がまだ�
 当時は、ちょっと使いづらいなぁという部分がいくつかありました。
 半年経ってKotlin1.3はだいぶ進化していて、PJで使えるようになってそうと感じた。&lt;/p&gt;
 &lt;h2&gt;Knative: Serving your Serverless Java Service on Kubernetes the 12-Factor way&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&quot;https://slidr.io/kameshsampath/knative-serving-your-serverless-services#1&quot;&gt;https://slidr.io/kameshsampath/knative-serving-your-serverless-services#1&lt;/a&gt;
-&lt;a href=&quot;https://blog.openshift.com/knative-serving-your-serverless-services/&quot;&gt;https://blog.openshift.com/knative-serving-your-serverless-services/&lt;/a&gt;
-&lt;a href=&quot;https://blog.openshift.com/knative-building-your-serverless-service/&quot;&gt;https://blog.openshift.com/knative-building-your-serverless-service/&lt;/a&gt;
-&lt;a href=&quot;https://blog.openshift.com/knative-configurations-routes-and-revisions/&quot;&gt;https://blog.openshift.com/knative-configurations-routes-and-revisions/&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://slidr.io/kameshsampath/knative-serving-your-serverless-services#1&quot;&gt;https://slidr.io/kameshsampath/knative-serving-your-serverless-services#1&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://blog.openshift.com/knative-serving-your-serverless-services/&quot;&gt;https://blog.openshift.com/knative-serving-your-serverless-services/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://blog.openshift.com/knative-building-your-serverless-service/&quot;&gt;https://blog.openshift.com/knative-building-your-serverless-service/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://blog.openshift.com/knative-configurations-routes-and-revisions/&quot;&gt;https://blog.openshift.com/knative-configurations-routes-and-revisions/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;p&gt;Japanese Nativeには辛い英語セッションでした。&lt;/p&gt;
 &lt;p&gt;Knativeは強力そう。ということが分かったので帰ったら調べてみたいと思うところ。&lt;/p&gt;
 &lt;h2&gt;基礎からのOAuth 2.0とSpring Security 5.1による実装&lt;/h2&gt;
 &lt;p&gt;Agenda:&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;blockquote&gt;
-&lt;blockquote&gt;
 &lt;p&gt;OAuth 2.0は、Web APIでよく利用される認可プロトコルです。Spring Securityでは、5.0でクライアント機能、5.1でリソースサーバー機能が追加されました。このセッションでは、前半でOAuth 2.0についてはじめから丁寧に解説します。そして後半では、Spring Security5.1のクライアント機能やリソースサーバー機能を、実装例を交えながら紹介します。認可サーバーはDocker + Keycloakで構築します）
 OAuth2.0の名前を聞いたことはあるけど詳細は知らない・・・という方にピッタリのセッションです。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;/blockquote&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;Spring Sercurity 5.0から、OAuth2.0を標準搭載。
 以前はSpring Sercurity OAuth2等を使用していた。
