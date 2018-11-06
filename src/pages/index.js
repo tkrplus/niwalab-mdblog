@@ -50,9 +50,6 @@ class BlogIndex extends React.Component {
             </PostWrapper>
           )
         })}
-        <CategoryList
-          categories={categories}
-        />
       </Layout>
     )
   }
@@ -70,11 +67,15 @@ const PostTitle = styled.h3`
   text-decoration: none;
   margin: 0;
   color: ${Color.MEDIUM_BLACK};
+  transition: .3s ease;
+  &:hover {
+    color: ${Color.NAVY};
+  }
 `
 
 const PostMeta = styled.div`
   margin: 10px 0 0;
-  color: ${Color.VERY_LIGHT_GRAY};
+  color: ${Color.GRAY};
   font-size: ${Size.FONT.SMALL}px;
   font-weight: 400;
 `
@@ -103,8 +104,8 @@ const ReadMore = styled(Link)`
   padding: 0 15px;
   margin: 12px 0 0;
   border-radius: 2px;
-  trasition: .2s ease;
-  &:hober {
+  transition: .3s ease;
+  &:hover {
     background-color: ${Color.BLACK};
   }
 `
@@ -122,7 +123,7 @@ export const pageQuery = graphql`
     allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
       edges {
         node {
-          excerpt
+          excerpt(pruneLength: 280)
           fields {
             slug
           }

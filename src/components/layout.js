@@ -1,4 +1,5 @@
 import React from 'react'
+import '~/src/assets/css/custom.css'
 import styled from 'styled-components'
 import { Link } from 'gatsby'
 import TopHeader from '~/src/components/atoms/TopHeader'

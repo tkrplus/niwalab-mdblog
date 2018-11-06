@@ -77,17 +77,21 @@ const PostWrapper = styled.div`
 `
 
 const PostTitle = styled.h3`
-  font-size: ${Size.FONT.X_BASE}px;
+  font-size: ${Size.FONT.LARGE}px;
   font-weight: 700;
   line-height: 1.5em;
   text-decoration: none;
   margin: 0;
   color: ${Color.MEDIUM_BLACK};
+  transition: .3s ease;
+  &:hover {
+    color: ${Color.NAVY};
+  }
 `
 
 const PostMeta = styled.div`
   margin: 10px 0 0;
-  color: ${Color.VERY_LIGHT_GRAY};
+  color: ${Color.GRAY};
   font-size: ${Size.FONT.SMALL}px;
   font-weight: 400;
 `
