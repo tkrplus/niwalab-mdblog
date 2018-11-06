@@ -1,4 +1,5 @@
 import React from 'react'
+import styled from 'styled-components'
 import Helmet from 'react-helmet'
 import { Link,graphql } from 'gatsby'
 import get from 'lodash/get'
@@ -6,6 +7,11 @@ import get from 'lodash/get'
 import Bio from '../components/Bio'
 import Layout from '../components/layout'
 import { rhythm, scale } from '../utils/typography'
+import Const from '~/src/const'
+const {
+  Size,
+  Color
+} = Const
 
 class BlogPostTemplate extends React.Component {
   render() {
@@ -21,23 +27,16 @@ class BlogPostTemplate extends React.Component {
           meta={[{ name: 'description', content: siteDescription }]}
           title={`${post.frontmatter.title} | ${siteTitle}`}
         />
-        <h1>{post.frontmatter.title}</h1>
-        <p
-          style={{
-            ...scale(-1 / 5),
-            display: 'block',
-            marginBottom: rhythm(1),
-            marginTop: rhythm(-1),
-          }}
-        >
-          {post.frontmatter.date}
-        </p>
-        <div dangerouslySetInnerHTML={{ __html: post.html }} />
-        <hr
-          style={{
-            marginBottom: rhythm(1),
-          }}
-        />
+        <PostWrapper>
+          <PostTitle>{post.frontmatter.title}</PostTitle>
+          <PostMeta>
+            <PostDate>
+              {post.frontmatter.date}
+            </PostDate>
+          </PostMeta>
+          <PostSnipet dangerouslySetInnerHTML={{ __html: post.html }} />
+        </PostWrapper>
+        <hr />
         <Bio />
 
         <ul
@@ -52,17 +51,17 @@ class BlogPostTemplate extends React.Component {
           <li>
             {
               previous &&
-              <Link to={previous.fields.slug} rel="prev">
+              <OtherPostLink to={previous.fields.slug} rel="prev">
                 ← {previous.frontmatter.title}
-              </Link>
+              </OtherPostLink>
             }
           </li>
           <li>
             {
               next &&
-              <Link to={next.fields.slug} rel="next">
+              <OtherPostLink to={next.fields.slug} rel="next">
                 {next.frontmatter.title} →
-              </Link>
+              </OtherPostLink>
             }
           </li>
         </ul>
@@ -70,6 +69,62 @@ class BlogPostTemplate extends React.Component {
     )
   }
 }
+
+
+const PostWrapper = styled.div`
+  display: block;
+  margin: 60px 15px 30px;
+`
+
+const PostTitle = styled.h3`
+  font-size: ${Size.FONT.LARGE}px;
+  font-weight: 700;
+  line-height: 1.5em;
+  text-decoration: none;
+  margin: 0;
+  color: ${Color.MEDIUM_BLACK};
+  transition: .3s ease;
+  &:hover {
+    color: ${Color.NAVY};
+  }
+`
+
+const PostMeta = styled.div`
+  margin: 10px 0 0;
+  color: ${Color.GRAY};
+  font-size: ${Size.FONT.SMALL}px;
+  font-weight: 400;
+`
+
+const PostDate = styled.span`
+  display: inline-block;
+  margin: 0;
+`
+
+const PostSnipet = styled.p`
+  display: block;
+  margin: 7px 0 0;
+  font-size: ${Size.FONT.SMALL}px;
+  font-weight: 400px;
+  color: ${Color.BASE_FONT};
+`
+
+const OtherPostLink = styled(Link)`
+  display: inline-block;
+  background-color: ${Color.NAVY};
+  color: ${Color.WHITE};
+  height: 28px;
+  font-size: ${Size.FONT.SMALL}px;
+  font-weight: 400;
+  line-height: 28px;
+  padding: 0 15px;
+  margin: 12px 0 0;
+  border-radius: 2px;
+  trasition: .2s ease;
+  &:hober {
+    background-color: ${Color.BLACK};
+  }
+`
 
 export default BlogPostTemplate
 

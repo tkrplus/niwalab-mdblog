@@ -46,8 +46,7 @@ Kotlinはゆくゆく導入したいなーという考えがあるので、ち�
 # Sessions
 ## エンタープライズ・マイクロサービスの格言
 Agenda
->>>
-エンタープライズ系システムのマイクロサービス化、それが、エンタープライズ・マイクロサービス。 Spring Fest 2017の「日本一やさしいマイクロサービス入門」の続編的ハナシとして、エンタープライズ・マイクロサービスを上手くやるための格言などを噺します。 真面目なセッションで疲れてしまった貴方の頭が休まるセッション(!?)。
+> エンタープライズ系システムのマイクロサービス化、それが、エンタープライズ・マイクロサービス。 Spring Fest 2017の「日本一やさしいマイクロサービス入門」の続編的ハナシとして、エンタープライズ・マイクロサービスを上手くやるための格言などを噺します。 真面目なセッションで疲れてしまった貴方の頭が休まるセッション(!?)。
 
 プロジェクトをスケールする手段として、マイクロサービス(MS)化を選んでいきたいなと思っているこの頃。
 エンタープライズ向けマイクロサービスというタイトルに惹かれて参加。
@@ -73,7 +72,7 @@ MSの切り分けの単位は、最初は主観的な粒度で良い
 基本的にMSは探索的な開発になるので、手戻りが難しいウォーターフォール(WF)型は難しいんじゃないかなというところ。
 個人的にも、ちょっとした失敗・手戻りでも管理をしなきゃいけないWF型はMSに向かないと思ってる。
 
->>>
+>
 エンターブライズなシステム開発では、技術スキルの低さが問題となる。
 優秀なチームリーダを配置することで最低限の品質をチームリーダで保証していく。
 
@@ -101,7 +100,7 @@ UTの実行速度は大切。（プルリクでUT時間かかりすぎてマー�
 ## 実際のプロジェクトでSpringアプリをKotlinで開発して得た気づき集
 Speacker: https://taro.hatenablog.jp/
 Agenda:
->>>
+>
 SpringはかねてよりKotlinをサポートしていましたが、Spring Framework 5.0でよりKotlinフレンドリなAPIを提供し始めました。本セッションでは、SpringアプリをKotlinで開発する基本的な話と、実際の開発を経験して得られた知見をTips集のような形で共有します。
 本セッションを聴いていただき、Kotlinへの関心を高め、Kotlin x Springにありがちな落とし穴を回避する策を学んでいただければ幸いです。
 
@@ -129,7 +128,7 @@ JSでPromiseの可読性が悪くなるので、async, awaitを使ってあげ�
 アノテーションを削除する代わりに、自分でBean登録してやろうという話。
 
 以下、サンプルコード
-```
+```kotlin{4-12}
 SpringAppicationBuilder()
   .sources(DemoApplication::class.java)
   .initializers(beans {
@@ -160,7 +159,7 @@ Kotlinテスト周辺ツールは下記らしい。
 - DbSetup-kotlin
 
 Kotlin 1.3から文脈からNotNullを推定してくれる機能がついた。
-```
+```kotlin
 if(item != null) {
   item.name // 従来はitem?.nameという記述が必要だった。
 }
@@ -176,10 +175,10 @@ Kotlin1.1 x SpringBoot2.0を2018年3月くらいに触ったことがありま�
 半年経ってKotlin1.3はだいぶ進化していて、PJで使えるようになってそうと感じた。
 
 ## Knative: Serving your Serverless Java Service on Kubernetes the 12-Factor way
-https://slidr.io/kameshsampath/knative-serving-your-serverless-services#1
-https://blog.openshift.com/knative-serving-your-serverless-services/
-https://blog.openshift.com/knative-building-your-serverless-service/
-https://blog.openshift.com/knative-configurations-routes-and-revisions/
+- https://slidr.io/kameshsampath/knative-serving-your-serverless-services#1
+- https://blog.openshift.com/knative-serving-your-serverless-services/
+- https://blog.openshift.com/knative-building-your-serverless-service/
+- https://blog.openshift.com/knative-configurations-routes-and-revisions/
 
 Japanese Nativeには辛い英語セッションでした。
 
@@ -188,7 +187,7 @@ Knativeは強力そう。ということが分かったので帰ったら調べ�
 
 ## 基礎からのOAuth 2.0とSpring Security 5.1による実装
 Agenda:
->>>
+>
 OAuth 2.0は、Web APIでよく利用される認可プロトコルです。Spring Securityでは、5.0でクライアント機能、5.1でリソースサーバー機能が追加されました。このセッションでは、前半でOAuth 2.0についてはじめから丁寧に解説します。そして後半では、Spring Security5.1のクライアント機能やリソースサーバー機能を、実装例を交えながら紹介します。認可サーバーはDocker + Keycloakで構築します）
 OAuth2.0の名前を聞いたことはあるけど詳細は知らない・・・という方にピッタリのセッションです。
 
