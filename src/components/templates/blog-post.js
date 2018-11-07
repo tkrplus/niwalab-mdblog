@@ -4,9 +4,9 @@ import Helmet from 'react-helmet'
 import { Link,graphql } from 'gatsby'
 import get from 'lodash/get'
 
-import Bio from '../components/Bio'
-import Layout from '../components/layout'
-import { rhythm, scale } from '../utils/typography'
+import Bio from '~/src/components/Bio'
+import Layout from '~/src/components/layout'
+import { rhythm, scale } from '~/src/utils/typography'
 import Const from '~/src/const'
 const {
   Size,

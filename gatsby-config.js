@@ -1,18 +1,25 @@
 module.exports = {
   siteMetadata: {
     title: 'Niwa-Lab Blog',
-    author: 'tkrplus',
+    author: 'Niwa Takeru',
     description: 'A blog',
-    siteUrl: 'https://tkrplus.github.io/niwalab-mdblog/',
+    siteUrl: 'https://tkrplus.github.io/niwalab-mdblog/'
   },
   pathPrefix: 'niwalab-mdblog',
   plugins: [
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/src/pages`,
-        name: 'pages',
-      },
+        path: `${__dirname}/src/contents`,
+        name: 'contents'
+      }
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/src/components/pages`,
+        name: 'pages'
+      }
     },
     {
       resolve: `gatsby-transformer-remark`,

@@ -4,10 +4,8 @@ import { Link, graphql } from 'gatsby'
 import get from 'lodash/get'
 import Helmet from 'react-helmet'
 
-import Bio from '../components/Bio'
-import CategoryList from '../components/CategoryList'
-import Layout from '../components/layout'
-import { rhythm } from '../utils/typography'
+import CategoryList from '~/src/components/CategoryList'
+import Layout from '~/src/components/layout'
 import Const from '~/src/const'
 const {
   Size,
@@ -37,7 +35,7 @@ class BlogIndex extends React.Component {
             <PostWrapper key={node.fields.slug}>
               <Link to={node.fields.slug}>
                 <PostTitle>
-                    {title}
+                  {title}
                 </PostTitle>
               </Link>
               <PostMeta>
