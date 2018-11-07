@@ -2,18 +2,18 @@ import React from 'react'
 import '~/src/assets/css/custom.css'
 import styled from 'styled-components'
 import { Link } from 'gatsby'
-import TopHeader from '~/src/components/atoms/TopHeader'
 import TopHeaderImage from '~/src/assets/TopHeader.png'
 import SiteIcon from '~/src/assets/icon.png'
+import TopHeader from '~/src/components/atoms/TopHeader'
 import InputAnimation from '~/src/components/atoms/InputAnimation'
 import Const from '~/src/const'
-import { rhythm } from '../utils/typography'
+import { rhythm } from '~/src/utils/typography'
 
 const {
   Size
 } = Const
 
-class Template extends React.Component {
+class Layout extends React.Component {
   render () {
     const { location, children } = this.props
     const rootPath = `${__PATH_PREFIX__}/`
@@ -114,4 +114,4 @@ const SiteSubMessage = styled.div`
   }
 `
 
-export default Template
+export default Layout

@@ -4,8 +4,8 @@ import { Link, graphql } from 'gatsby'
 import get from 'lodash/get'
 import Helmet from 'react-helmet'
 
-import CategoryList from '~/src/components/CategoryList'
-import Layout from '~/src/components/layout'
+import CategoryList from '~/src/components/organisms/CategoryList'
+import Layout from '~/src/components/templates/Layout'
 import Const from '~/src/const'
 const {
   Size,
