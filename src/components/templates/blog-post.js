@@ -4,8 +4,8 @@ import Helmet from 'react-helmet'
 import { Link, graphql } from 'gatsby'
 import get from 'lodash/get'
 
-import Bio from '~/src/components/Bio'
-import Layout from '~/src/components/layout'
+import Bio from '~/src/components/organisms/Bio'
+import Layout from '~/src/components/templates/Layout'
 import Const from '~/src/const'
 const {
   Size,

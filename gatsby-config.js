@@ -8,24 +8,24 @@ module.exports = {
   pathPrefix: 'niwalab-mdblog',
   plugins: [
     {
-      resolve: `gatsby-plugin-page-creator`,
+      resolve: 'gatsby-plugin-page-creator',
       options: {
         path: `${__dirname}/src/components/pages`
       }
     },
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: 'gatsby-source-filesystem',
       options: {
         path: `${__dirname}/src/contents`,
         name: 'contents'
       }
     },
     {
-      resolve: `gatsby-transformer-remark`,
+      resolve: 'gatsby-transformer-remark',
       options: {
         plugins: [
           {
-            resolve: `gatsby-remark-images`,
+            resolve: 'gatsby-remark-images',
             options: {
               maxWidth: 590
             }
@@ -39,19 +39,19 @@ module.exports = {
             }
           },
           {
-            resolve: `gatsby-remark-responsive-iframe`,
+            resolve: 'gatsby-remark-responsive-iframe',
             options: {
-              wrapperStyle: `margin-bottom: 1.0725rem`
+              wrapperStyle: 'margin-bottom: 1.0725rem'
             }
           },
           {
-            resolve: `gatsby-remark-emojis`,
+            resolve: 'gatsby-remark-emojis',
             options: {
               size: 24
             }
           },
           {
-            resolve: `gatsby-remark-images`,
+            resolve: 'gatsby-remark-images',
             options: {
               maxWidth: 600
             }
@@ -63,28 +63,28 @@ module.exports = {
         ]
       }
     },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
+    'gatsby-transformer-sharp',
+    'gatsby-plugin-sharp',
     {
-      resolve: `gatsby-plugin-google-analytics`,
+      resolve: 'gatsby-plugin-google-analytics',
       options: {
-        // trackingId: `ADD YOUR TRACKING ID HERE`,
+        // trackingId: 'ADD YOUR TRACKING ID HERE',
       }
     },
-    `gatsby-plugin-feed`,
+    'gatsby-plugin-feed',
     {
-      resolve: `gatsby-plugin-manifest`,
+      resolve: 'gatsby-plugin-manifest',
       options: {
-        name: `Niwalab`,
-        start_url: `/`,
-        background_color: `#ffffff`,
-        theme_color: `#663399`,
-        display: `minimal-ui`,
-        icon: `src/assets/icon.svg`
+        name: 'Niwalab',
+        start_url: '/',
+        background_color: '#ffffff',
+        theme_color: '#663399',
+        display: 'minimal-ui',
+        icon: 'src/assets/icon.svg'
       }
     },
-    `gatsby-plugin-offline`,
-    `gatsby-plugin-react-helmet`,
+    'gatsby-plugin-offline',
+    'gatsby-plugin-react-helmet',
     {
       resolve: 'gatsby-plugin-typography',
       options: {
@@ -92,7 +92,7 @@ module.exports = {
       }
     },
     {
-      resolve: `gatsby-plugin-root-import`,
+      resolve: 'gatsby-plugin-root-import',
       options: {
         '~/src': `${__dirname}/src`
       }
