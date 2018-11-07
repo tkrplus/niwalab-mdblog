@@ -4,6 +4,7 @@ import { Link, graphql } from 'gatsby'
 import get from 'lodash/get'
 import Helmet from 'react-helmet'
 
+import Bio from '~/src/components/organisms/Bio'
 import CategoryList from '~/src/components/organisms/CategoryList'
 import Layout from '~/src/components/templates/Layout'
 import Const from '~/src/const'
@@ -48,6 +49,8 @@ class BlogIndex extends React.Component {
             </PostWrapper>
           )
         })}
+        <hr />
+        <Bio />
       </Layout>
     )
   }

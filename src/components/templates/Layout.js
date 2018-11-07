@@ -15,53 +15,29 @@ const {
 
 class Layout extends React.Component {
   render () {
-    const { location, children } = this.props
-    const rootPath = `${__PATH_PREFIX__}/`
+    const { children } = this.props
     let header
 
-    if (location.pathname === rootPath) {
-      header = (
-        <TopHeader image={TopHeaderImage}>
-          <SiteTopWrapper>
-            <SiteIconImg src={SiteIcon} />
-            <SiteTitleWrapper>
-              <SiteTitle>Niwalab</SiteTitle>
-              <SiteSubMessage>
-                <InputAnimation
-                  prefix='I Am'
-                  contents={[
-                    'Takeru Niwa.',
-                    'a Developer.',
-                    'a System Integrator.'
-                  ]}
-                />
-              </SiteSubMessage>
-            </SiteTitleWrapper>
-          </SiteTopWrapper>
-        </ TopHeader>
-      )
-    } else {
-      header = (
-        <h3
-          style={{
-            fontFamily: 'Montserrat, sans-serif',
-            marginTop: 0,
-            marginBottom: rhythm(-1)
-          }}
-        >
-          <Link
-            style={{
-              boxShadow: 'none',
-              textDecoration: 'none',
-              color: 'inherit'
-            }}
-            to={'/'}
-          >
-            Niwalab
-          </Link>
-        </h3>
-      )
-    }
+    header = (
+      <TopHeader image={TopHeaderImage}>
+        <SiteTopWrapper>
+          <SiteIconImg src={SiteIcon} />
+          <SiteTitleWrapper>
+            <SiteTitle>Niwalab</SiteTitle>
+            <SiteSubMessage>
+              <InputAnimation
+                prefix='I Am'
+                contents={[
+                  'Takeru Niwa.',
+                  'a Developer.',
+                  'a System Integrator.'
+                ]}
+              />
+            </SiteSubMessage>
+          </SiteTitleWrapper>
+        </SiteTopWrapper>
+      </ TopHeader>
+    )
     return (
       <div>
         {header}
