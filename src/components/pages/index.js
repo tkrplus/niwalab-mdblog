@@ -13,7 +13,7 @@ const {
 } = Const
 
 class BlogIndex extends React.Component {
-  render() {
+  render () {
     const siteTitle = get(this, 'props.data.site.siteMetadata.title')
     const siteDescription = get(
       this,

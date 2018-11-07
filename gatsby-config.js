@@ -8,17 +8,16 @@ module.exports = {
   pathPrefix: 'niwalab-mdblog',
   plugins: [
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: `gatsby-plugin-page-creator`,
       options: {
-        path: `${__dirname}/src/contents`,
-        name: 'contents'
+        path: `${__dirname}/src/components/pages`
       }
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/src/components/pages`,
-        name: 'pages'
+        path: `${__dirname}/src/contents`,
+        name: 'contents'
       }
     },
     {
@@ -28,8 +27,8 @@ module.exports = {
           {
             resolve: `gatsby-remark-images`,
             options: {
-              maxWidth: 590,
-            },
+              maxWidth: 590
+            }
           },
           {
             resolve: 'gatsby-remark-prismjs',
@@ -37,13 +36,13 @@ module.exports = {
               classPrefix: 'language-',
               inlineCodeMaker: null,
               showLineNumbers: true
-            },
+            }
           },
           {
             resolve: `gatsby-remark-responsive-iframe`,
             options: {
-              wrapperStyle: `margin-bottom: 1.0725rem`,
-            },
+              wrapperStyle: `margin-bottom: 1.0725rem`
+            }
           },
           {
             resolve: `gatsby-remark-emojis`,
@@ -54,23 +53,23 @@ module.exports = {
           {
             resolve: `gatsby-remark-images`,
             options: {
-              maxWidth: 600,
+              maxWidth: 600
             }
           },
           'gatsby-remark-prismjs',
           'gatsby-remark-copy-linked-files',
           'gatsby-remark-smartypants',
-          'gatsby-remark-code-titles',
-        ],
-      },
+          'gatsby-remark-code-titles'
+        ]
+      }
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        //trackingId: `ADD YOUR TRACKING ID HERE`,
-      },
+        // trackingId: `ADD YOUR TRACKING ID HERE`,
+      }
     },
     `gatsby-plugin-feed`,
     {
@@ -81,16 +80,16 @@ module.exports = {
         background_color: `#ffffff`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/assets/icon.svg`,
-      },
+        icon: `src/assets/icon.svg`
+      }
     },
     `gatsby-plugin-offline`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: 'gatsby-plugin-typography',
       options: {
-        pathToConfigModule: 'src/utils/typography',
-      },
+        pathToConfigModule: 'src/utils/typography'
+      }
     },
     {
       resolve: `gatsby-plugin-root-import`,
@@ -98,5 +97,5 @@ module.exports = {
         '~/src': `${__dirname}/src`
       }
     }
-  ],
+  ]
 }

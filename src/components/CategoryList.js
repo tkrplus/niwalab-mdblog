@@ -1,11 +1,9 @@
 import React from 'react'
-import { Link, graphql } from 'gatsby'
+import { Link } from 'gatsby'
 import _ from 'lodash'
 
-import { rhythm } from '../utils/typography'
-
 export default class CategoryList extends React.Component {
-  render() {
+  render () {
     const {
       categories
     } = this.props

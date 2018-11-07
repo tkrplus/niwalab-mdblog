@@ -19,5 +19,11 @@ module.exports = {
       "experimentalObjectRestSpread": true,
       "jsx": true,
     },
+  },
+  "rules": {
+    "react/prop-types": 0
+  },
+  "globals": {
+    "__PATH_PREFIX__": false
   }
 }
