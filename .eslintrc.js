@@ -1,4 +1,8 @@
 module.exports = {
+  "extends": [
+    "plugin:react/recommended",
+    "standard"
+  ],
   "env": {
     "browser": true,
     "es6": true,
@@ -15,5 +19,11 @@ module.exports = {
       "experimentalObjectRestSpread": true,
       "jsx": true,
     },
+  },
+  "rules": {
+    "react/prop-types": 0
+  },
+  "globals": {
+    "__PATH_PREFIX__": false
   }
 }

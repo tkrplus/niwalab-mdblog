@@ -3,7 +3,7 @@
 NOW=`date '+%s'`
 DATE=`date -r $NOW +%Y%m%d`
 DATETIME=`date -r $NOW +%Y-%m-%dT%H:%M:%S`
-DIR="src/pages/$DATE"
+DIR="src/contents/$DATE"
 FILE="$DIR/index.md"
 
 echo "Today is $DATE"

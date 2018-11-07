@@ -7,14 +7,14 @@ import TopHeaderImage from '~/src/assets/TopHeader.png'
 import SiteIcon from '~/src/assets/icon.png'
 import InputAnimation from '~/src/components/atoms/InputAnimation'
 import Const from '~/src/const'
-import { rhythm, scale } from '../utils/typography'
+import { rhythm } from '../utils/typography'
 
 const {
   Size
 } = Const
 
 class Template extends React.Component {
-  render() {
+  render () {
     const { location, children } = this.props
     const rootPath = `${__PATH_PREFIX__}/`
     let header
@@ -32,7 +32,7 @@ class Template extends React.Component {
                   contents={[
                     'Takeru Niwa.',
                     'a Developer.',
-                    'a System Integrator.',
+                    'a System Integrator.'
                   ]}
                 />
               </SiteSubMessage>
@@ -46,14 +46,14 @@ class Template extends React.Component {
           style={{
             fontFamily: 'Montserrat, sans-serif',
             marginTop: 0,
-            marginBottom: rhythm(-1),
+            marginBottom: rhythm(-1)
           }}
         >
           <Link
             style={{
               boxShadow: 'none',
               textDecoration: 'none',
-              color: 'inherit',
+              color: 'inherit'
             }}
             to={'/'}
           >
@@ -113,6 +113,5 @@ const SiteSubMessage = styled.div`
     font-size: ${Size.FONT.BASE}px;
   }
 `
-
 
 export default Template

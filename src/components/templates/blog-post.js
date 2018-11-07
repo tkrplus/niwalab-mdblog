@@ -1,12 +1,11 @@
 import React from 'react'
 import styled from 'styled-components'
 import Helmet from 'react-helmet'
-import { Link,graphql } from 'gatsby'
+import { Link, graphql } from 'gatsby'
 import get from 'lodash/get'
 
-import Bio from '../components/Bio'
-import Layout from '../components/layout'
-import { rhythm, scale } from '../utils/typography'
+import Bio from '~/src/components/Bio'
+import Layout from '~/src/components/layout'
 import Const from '~/src/const'
 const {
   Size,
@@ -14,7 +13,7 @@ const {
 } = Const
 
 class BlogPostTemplate extends React.Component {
-  render() {
+  render () {
     const post = this.props.data.markdownRemark
     const siteTitle = get(this.props, 'data.site.siteMetadata.title')
     const siteDescription = post.excerpt
@@ -45,7 +44,7 @@ class BlogPostTemplate extends React.Component {
             flexWrap: 'wrap',
             justifyContent: 'space-between',
             listStyle: 'none',
-            padding: 0,
+            padding: 0
           }}
         >
           <li>
@@ -69,7 +68,6 @@ class BlogPostTemplate extends React.Component {
     )
   }
 }
-
 
 const PostWrapper = styled.div`
   display: block;
