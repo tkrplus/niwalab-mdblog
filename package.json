@@ -15,7 +15,8 @@
     "build": "gatsby build",
     "deploy": "gatsby build --prefix-paths && gh-pages -d public",
     "fix-semi": "eslint --quiet --ignore-pattern node_modules --ignore-pattern public --parser babel-eslint --no-eslintrc --rule '{\"semi\": [2, \"never\"], \"no-extra-semi\": [2]}' --fix gatsby-node.js",
-    "lint:fix": "eslint --fix src/**/*.js"
+    "lint:fix": "eslint --fix src/**/*.js",
+    "textlint": "textlint src/contents/**/*.md"
   },
   "dependencies": {
     "gatsby": "^2.0.19",
@@ -60,7 +61,11 @@
     "eslint-plugin-standard": "^4.0.0",
     "gatsby-plugin-root-import": "^2.0.4",
     "gh-pages": "^1.2.0",
-    "prettier": "^1.14.2"
+    "prettier": "^1.14.2",
+    "textlint": "^11.0.1",
+    "textlint-rule-date-weekday-mismatch": "^1.0.5",
+    "textlint-rule-preset-ja-technical-writing": "^3.1.0",
+    "textlint-rule-spellcheck-tech-word": "^5.0.0"
   },
   "repository": {
     "type": "git",

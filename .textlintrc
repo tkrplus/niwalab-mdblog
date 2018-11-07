@@ -1,0 +1,10 @@
+{
+  "rules": {
+    "preset-ja-technical-writing": {
+      "ja-no-weak-phrase" : false,
+      "no-exclamation-question-mark" : false
+    },
+    "date-weekday-mismatch" : true,
+    "spellcheck-tech-word" : true
+  }
+}
