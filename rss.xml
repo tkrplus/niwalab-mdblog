@@ -1,4 +1,57 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Niwa-Lab Blog]]></title><description><![CDATA[A blog]]></description><link>https://tkrplus.github.io/niwalab-mdblog/</link><generator>RSS for Node</generator><lastBuildDate>Wed, 07 Nov 2018 23:30:12 GMT</lastBuildDate><item><title><![CDATA[React会 #1 参加レポート]]></title><description><![CDATA[イベントの概要 日時： 2018年11月1日 19:30 - 21:30 場所： Mercari URL：  https://react-kai.connpass.com/event/102286/ どんな会だった？ 今回のホットワードは   でした。 会自体はLTが…]]></description><link>https://tkrplus.github.io/niwalab-mdblog//20181101/</link><guid isPermaLink="false">https://tkrplus.github.io/niwalab-mdblog//20181101/</guid><pubDate>Thu, 01 Nov 2018 10:37:48 GMT</pubDate><content:encoded>&lt;h1&gt;イベントの概要&lt;/h1&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Niwa-Lab Blog]]></title><description><![CDATA[A blog]]></description><link>https://tkrplus.github.io/niwalab-mdblog/</link><generator>RSS for Node</generator><lastBuildDate>Fri, 09 Nov 2018 14:35:01 GMT</lastBuildDate><item><title><![CDATA[Kubernetes Metetup #14 参加レポート]]></title><description><![CDATA[はじめに Kubernetes Meetup Tokyoに参加してきました。 現在の業務では kubernetes は使用していませんが、今後は使用する可能性があります。
+今、扱っているプロダクトがスケールする前には   は入れておきたいと改めて思わされました。 k8s…]]></description><link>https://tkrplus.github.io/niwalab-mdblog//20181108/</link><guid isPermaLink="false">https://tkrplus.github.io/niwalab-mdblog//20181108/</guid><pubDate>Thu, 08 Nov 2018 09:50:06 GMT</pubDate><content:encoded>&lt;h2&gt;はじめに&lt;/h2&gt;
+&lt;p&gt;Kubernetes Meetup Tokyoに参加してきました。&lt;/p&gt;
+&lt;p&gt;現在の業務では kubernetes は使用していませんが、今後は使用する可能性があります。
+今、扱っているプロダクトがスケールする前には &lt;code class=&quot;language-text&quot;&gt;k8s&lt;/code&gt; は入れておきたいと改めて思わされました。&lt;/p&gt;
+&lt;p&gt;k8s meetupは7月頃に参加して以来です。
+それまで数回開催されていましたが、2回抽選落ちしての3回ぶり参加でした。
+開催されるごとに抽選倍率が上がっているような気がします。
+ちなみに、今回の倍率は3倍くらいだったので確率としてはあってますね。笑&lt;/p&gt;
+&lt;h2&gt;イベント概要&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;日時: 2018年11月8日&lt;/li&gt;
+&lt;li&gt;場所: Google 東京オフィス&lt;/li&gt;
+&lt;li&gt;URL: &lt;a href=&quot;https://k8sjp.connpass.com/event/104450/&quot;&gt;https://k8sjp.connpass.com/event/104450/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;About: Kubernetes Meetup Tokyo #14を開催します！ コンテナをデプロイできる強力なシステム Kubernetes のことを詳しく聞く会です！&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;セッション一覧&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Quipper のマイクロサービス化への道のり&lt;/li&gt;
+&lt;li&gt;CacooはなぜKubernetesによるmicroservicesへの道を選んだのか？&lt;/li&gt;
+&lt;li&gt;Athenzを用いたKubernetes Webhook Authorization&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;感想&lt;/h2&gt;
+&lt;p&gt;個人的には &lt;code class=&quot;language-text&quot;&gt;k8s&lt;/code&gt; を若干使用したことがあります。
+学習コストはあったものの、インフラ周りの運用が格段に楽になったなと感じました。
+実際にプロジェクトで &lt;code class=&quot;language-text&quot;&gt;k8s&lt;/code&gt; を使用しているところではどんな課題があるのだろうと探るために参加しました。&lt;/p&gt;
+&lt;p&gt;今回のイベントでは、 &lt;code class=&quot;language-text&quot;&gt;k8s&lt;/code&gt; の導入事例の紹介が中心でした。
+1年程前の k8s meetup の内容は内部技術的な話が多かったと思います。
+そう考えると、 &lt;code class=&quot;language-text&quot;&gt;k8s&lt;/code&gt; は普及期に入ってきたような気がします。&lt;/p&gt;
+&lt;p&gt;普及期といっても日本のIT業界の上位5％の中での話な気がしますが…
+そういった感じで、日本のIT業界内で2極化が進んでいるなと思う今日このごろです。&lt;/p&gt;
+&lt;p&gt;学習コストを払って楽をしていかないと、逆に将来で苦労することになると考えています。
+今、レガシーなオンプレ環境にいる会社がいきなり k8s を導入するなんて無理ですよね。
+（すげー頑張ればできるかもしれないけど、確実に燃える）
+順当な手順としては&lt;code class=&quot;language-text&quot;&gt;PublicCloud&lt;/code&gt;に切り替えて &lt;code class=&quot;language-text&quot;&gt;Docker&lt;/code&gt;を使用し &lt;code class=&quot;language-text&quot;&gt;k8s&lt;/code&gt; を導入するだと思います。
+そうやって、1つずつ階段を登るように追従していっておいた方が安全なはず。
+将来的に崖みたいな段差を登るようなことがないようにしたいものだと思います。
+2極化で取り残された側には崖を登れず廃れている未来がきっと待ってます。&lt;/p&gt;
+&lt;p&gt;ということで、将来に行き場がなくならないよう頑張っていこうというのが私の最近のモチベーションです。笑&lt;/p&gt;
+&lt;p&gt;懇親会は &lt;code class=&quot;language-text&quot;&gt;k8s&lt;/code&gt; を使用していると会話ができ、かなり勉強になりました。
+ただ、業務で扱っていない技術での懇親会は話を噛み合わせられないことが多くヤキモキしますね。
+もっと勉強してから来ましょう。
+ってとこなので、もうちょっと &lt;code class=&quot;language-text&quot;&gt;k8s&lt;/code&gt; 勉強して行きたいと思います。&lt;/p&gt;
+&lt;h1&gt;Tips&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Monorepo&lt;/li&gt;
+&lt;li&gt;Ansible&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Protocol Buffers&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;サービス間のデータスキーマ&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[React会 #1 参加レポート]]></title><description><![CDATA[イベントの概要 日時： 2018年11月1日 19:30 - 21:30 場所： Mercari URL：  https://react-kai.connpass.com/event/102286/ どんな会だった？ 今回のホットワードは   でした。 会自体はLTが…]]></description><link>https://tkrplus.github.io/niwalab-mdblog//20181101/</link><guid isPermaLink="false">https://tkrplus.github.io/niwalab-mdblog//20181101/</guid><pubDate>Thu, 01 Nov 2018 10:37:48 GMT</pubDate><content:encoded>&lt;h1&gt;イベントの概要&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;日時： 2018年11月1日 19:30 - 21:30&lt;/li&gt;
 &lt;li&gt;場所： Mercari&lt;/li&gt;
