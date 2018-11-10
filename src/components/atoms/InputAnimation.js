@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import Const from '~/src/const'
 
 const {
+  Size,
   Color
 } = Const
 
@@ -11,9 +12,9 @@ const MODE_WAIT = 'wait'
 const MODE_MINUS = 'minus'
 
 export default class InputAnimation extends React.Component {
-  constructor(props){
+  constructor (props) {
     super(props)
-    this.input = React. createRef()
+    this.input = React.createRef()
     this.state = {
       count: 0,
       target: 0,
@@ -25,7 +26,7 @@ export default class InputAnimation extends React.Component {
     }
   }
 
-  plusAnimation() {
+  plusAnimation () {
     const {
       prefix,
       contents
@@ -33,7 +34,6 @@ export default class InputAnimation extends React.Component {
     const {
       count,
       target = 0,
-      mode,
       animation
     } = this.state
 
@@ -44,7 +44,7 @@ export default class InputAnimation extends React.Component {
       ? MODE_WAIT
       : MODE_PLUS
     let nextAnimation = animation
-    if(nextMode === MODE_WAIT) {
+    if (nextMode === MODE_WAIT) {
       clearInterval(animation)
       nextAnimation = setInterval(
         () => this.waitAnimation(),
@@ -60,7 +60,7 @@ export default class InputAnimation extends React.Component {
     })
   }
 
-  minusAnimation() {
+  minusAnimation () {
     const {
       prefix,
       contents
@@ -68,8 +68,7 @@ export default class InputAnimation extends React.Component {
     const {
       count,
       target = 0,
-      mode,
-      animation,
+      animation
     } = this.state
 
     const content = contents[target]
@@ -79,7 +78,7 @@ export default class InputAnimation extends React.Component {
 
     let nextAnimation = animation
     let nextTarget = target
-    if(nextMode === MODE_PLUS) {
+    if (nextMode === MODE_PLUS) {
       clearInterval(animation)
       nextAnimation = setInterval(
         () => this.plusAnimation(),
@@ -97,7 +96,7 @@ export default class InputAnimation extends React.Component {
     })
   }
 
-  waitAnimation() {
+  waitAnimation () {
     clearInterval(this.state.animation)
     const nextAnimation = setInterval(
       () => this.minusAnimation(),
@@ -110,22 +109,17 @@ export default class InputAnimation extends React.Component {
     })
   }
 
-  componentWillUnmount() {
+  componentWillUnmount () {
     clearInterval(this.animation)
   }
 
-  render() {
-    const {
-      prefix,
-      contents,
-    } = this.props
+  render () {
     const {
       text
     } = this.state
 
     return (
       <Wrapper>
-        <span></span>
         <Input>
           { text }
         </Input>
@@ -140,6 +134,14 @@ const Wrapper = styled.div`
 
 const Input = styled.p`
   display: inline-block;
+  margin: 0;
+  font-size: ${Size.FONT.MEDIUM}px;
+  @media(max-width: ${Size.MEDIA.TABLET}px) {
+    font-size: ${Size.FONT.MEDIUM}px;
+  }
+  @media(max-width: ${Size.MEDIA.PHONE}px) {
+    font-size: ${Size.FONT.BASE}px;
+  }
 `
 
 const Cursor = styled.span`

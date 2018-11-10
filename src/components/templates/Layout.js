@@ -1,13 +1,11 @@
 import React from 'react'
 import '~/src/assets/css/custom.css'
 import styled from 'styled-components'
-import { Link } from 'gatsby'
 import TopHeaderImage from '~/src/assets/TopHeader.png'
 import SiteIcon from '~/src/assets/icon.png'
 import TopHeader from '~/src/components/atoms/TopHeader'
 import InputAnimation from '~/src/components/atoms/InputAnimation'
 import Const from '~/src/const'
-import { rhythm } from '~/src/utils/typography'
 
 const {
   Size
@@ -60,9 +58,9 @@ const SiteTitleWrapper = styled.div`
 `
 
 const SiteIconImg = styled.img`
-  width: 80px;
+  width: 100px;
   margin-right: 10px;
-  @media(max-width: ${Size.MEDIA.PHONE}px) {
+  @media(max-width: ${Size.MEDIA.TABLET}px) {
     width: 75px;
   }
 `
@@ -81,13 +79,6 @@ const SiteTitle = styled.div`
 `
 
 const SiteSubMessage = styled.div`
-  font-size: ${Size.FONT.LARGE}px;
-  @media(max-width: ${Size.MEDIA.TABLET}px) {
-    font-size: ${Size.FONT.MEDIUM}px;
-  }
-  @media(max-width: ${Size.MEDIA.PHONE}px) {
-    font-size: ${Size.FONT.BASE}px;
-  }
 `
 
 export default Layout

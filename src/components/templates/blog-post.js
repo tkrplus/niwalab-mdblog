@@ -1,12 +1,15 @@
 import React from 'react'
 import styled from 'styled-components'
 import Helmet from 'react-helmet'
-import { Link, graphql } from 'gatsby'
+import { graphql } from 'gatsby'
 import get from 'lodash/get'
 
 import Bio from '~/src/components/organisms/Bio'
 import Layout from '~/src/components/templates/Layout'
+import ButtonLink from '~/src/components/atoms/ButtonLink'
+import Tag from '~/src/components/atoms/Tag'
 import Const from '~/src/const'
+
 const {
   Size,
   Color
@@ -17,6 +20,12 @@ class BlogPostTemplate extends React.Component {
     const post = this.props.data.markdownRemark
     const siteTitle = get(this.props, 'data.site.siteMetadata.title')
     const siteDescription = post.excerpt
+    const {
+      title,
+      date,
+      category,
+      tags
+    } = post.frontmatter
     const { previous, next } = this.props.pageContext
 
     return (
@@ -24,14 +33,26 @@ class BlogPostTemplate extends React.Component {
         <Helmet
           htmlAttributes={{ lang: 'en' }}
           meta={[{ name: 'description', content: siteDescription }]}
-          title={`${post.frontmatter.title} | ${siteTitle}`}
+          title={`${title} | ${siteTitle}`}
         />
         <PostWrapper>
-          <PostTitle>{post.frontmatter.title}</PostTitle>
+          <PostTitle>{title}</PostTitle>
           <PostMeta>
             <PostDate>
-              {post.frontmatter.date}
+              {date}
             </PostDate>
+            {
+              tags &&
+                <PostTagList>
+                  {tags.map(tag =>
+                    <Tag
+                      key={tag}
+                      name={tag}
+                      link={tag}
+                    />
+                  )}
+                </PostTagList>
+            }
           </PostMeta>
           <PostSnipet dangerouslySetInnerHTML={{ __html: post.html }} />
         </PostWrapper>
@@ -50,17 +71,17 @@ class BlogPostTemplate extends React.Component {
           <li>
             {
               previous &&
-              <OtherPostLink to={previous.fields.slug} rel="prev">
+              <ButtonLink to={previous.fields.slug} rel="prev">
                 ← {previous.frontmatter.title}
-              </OtherPostLink>
+              </ButtonLink>
             }
           </li>
           <li>
             {
               next &&
-              <OtherPostLink to={next.fields.slug} rel="next">
+              <ButtonLink to={next.fields.slug} rel="next">
                 {next.frontmatter.title} →
-              </OtherPostLink>
+              </ButtonLink>
             }
           </li>
         </ul>
@@ -107,21 +128,8 @@ const PostSnipet = styled.p`
   color: ${Color.BASE_FONT};
 `
 
-const OtherPostLink = styled(Link)`
-  display: inline-block;
-  background-color: ${Color.NAVY};
-  color: ${Color.WHITE};
-  height: 28px;
-  font-size: ${Size.FONT.SMALL}px;
-  font-weight: 400;
-  line-height: 28px;
-  padding: 0 15px;
-  margin: 12px 0 0;
-  border-radius: 2px;
-  trasition: .2s ease;
-  &:hober {
-    background-color: ${Color.BLACK};
-  }
+const PostTagList = styled.p`
+  margin: 0;
 `
 
 export default BlogPostTemplate
@@ -141,6 +149,8 @@ export const pageQuery = graphql`
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")
+        category
+        tags
       }
     }
   }

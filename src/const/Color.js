@@ -1,6 +1,7 @@
 export default {
   WHITE: '#FFFFFF',
   CALM_WHITE: '#EEEEEE',
+  SILVER: '#BDC3C7',
   VERY_LIGHT_GRAY: '#aebcb9',
   LIGHT_GRAY: '#868e96',
   GRAY: '#656565',
