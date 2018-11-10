@@ -7,7 +7,7 @@ const {
   Color
 } = Const
 
-export default (props) => {
+const TopHeader = (props) => {
   const {
     image,
     children
@@ -57,8 +57,8 @@ const Triangle = styled.div`
   position: absolute;
   bottom: -1px;
   right: -1px;
-  border-top: solid 70px transparent;
-  border-left: solid 1400px ${Color.WHITE};
+  border-top: solid 100px transparent;
+  border-left: solid 2000px ${Color.WHITE};
 `
 
 const Contents = styled.div`
@@ -67,3 +67,5 @@ const Contents = styled.div`
   left: 0;
   right: 0;
 `
+
+export default TopHeader
